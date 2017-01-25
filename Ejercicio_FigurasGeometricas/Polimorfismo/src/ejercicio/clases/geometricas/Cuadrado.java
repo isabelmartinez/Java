@@ -18,16 +18,8 @@ public class Cuadrado extends FiguraGeometrica{
 		this.lado = lado;
 	}
 	
-	public double getlado(){
-		return this.lado;
-	}
-	
-	public void setlado(double lado){
-		this.lado = lado;
-	}
-	
 	@Override
 	public double area() {
-		return getlado() * getlado();
+		return Math.pow(this.lado, 2);
 	}
 }
